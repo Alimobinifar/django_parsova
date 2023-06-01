@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+            <!-- add icon link -->
+            <link rel = "icon" href = 
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+                    type = "image/x-icon">
+</head>
+<body>
+
+    {% for elm in books %}
+        <div class="card">
+            <img src="{{ elm.img.url}}" class="card-img-top"  ,height="200" width="100">
+            <div class="card-body">
+              <h5 class="card-title">{{ elm.name }}</h5>
+                <h5 class="card-title">{{ elm.publisher }}</h5>
+                <h5 class="card-title">{{ elm.pages }}</h5>
+                <h5 class="card-title">{{ elm.author }}</h5>
+              <p class="card-text"><small class="text-muted">{{elm.price}}</small></p>
+            </div>
+          </div>s
+    {% endfor %}
+
+</body>
+</html>
